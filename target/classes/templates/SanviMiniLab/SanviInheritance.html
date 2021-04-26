@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="SanviInheritance" action="/SanviInheritance" method="GET">
+
+    <h1>Welcome to Sanvi's Inheritance Minilab</h1>
+
+    <br><br><br>
+
+    <label for="gear">Type gear value here:</label>
+    <input name="gear" id="gear" type="number" step="any" min="0" max="7" />
+    <br><br>
+    <label for="speed">Type initial speed here:</label>
+    <input name="speed" id="speed" type="number" step="any" min="0" max="10" />
+    <button>Submit</button>
+        <br>
+        <br>
+        <br>
+        <br>
+    <p th:text="'Initial Gear:' + ${gear}"></p>
+    <p th:text="'Initial Speed:' + ${speed}"></p>
+    <br><br>
+    <p th:text="'New Gear:' + ${newgear}"></p>
+    <p th:text="'New Speed: ' + ${newspeed}"></p>
+</form>
+</body>
+</html>

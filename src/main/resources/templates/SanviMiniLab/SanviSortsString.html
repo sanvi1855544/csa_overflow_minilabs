@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+
+        div label {
+            display: block;
+        }
+    </style> <!--This is to maintain horizontal input fields-->
+</head>
+<body>
+
+<form id="SanviSortsString" action="/SanviSortsString" method="GET">
+
+    <h1>Welcome to Sanvi's String Sorting Minilab</h1>
+
+    <p>Which sort would you like to perform?</p>
+
+    <input type="radio" id="insSort" name="sortType" value="Insertion Sort">
+
+    <label for="insSort">Insertion Sort</label><br>
+
+    <input type="radio" id="bubSort" name="sortType" value="Bubble Sort">
+
+    <label for="bubSort">Bubble Sort</label><br>
+
+    <input type="radio" id="selSort" name="sortType" value="Selection Sort">
+
+    <label for="selSort">Selection Sort</label>
+
+    <br>
+    <br>
+    <br>
+
+    <p>Please enter the list</p>
+
+    <br>
+    <div>
+        <input name="id0" id="id0" required type="text" minlength="4" maxlength="8" size="10" />
+        <label for="id0">1st string</label>
+    </div>
+    <div>
+        <input name="id1" id="id1" required type="text" minlength="4" maxlength="8" size="10" />
+        <label for="id1">2nd string</label>
+    </div>
+    <div>
+        <input name="id2" id="id2" required type="text" minlength="4" maxlength="8" size="10" />
+        <label for="id2">3rd string</label>
+    </div>
+    <div>
+        <input name="id3" id="id3" required type="text" minlength="4" maxlength="8" size="10" />
+        <label for="id3">4th string</label>
+    </div>
+    <div>
+        <input name="id4" id="id4" required type="text" minlength="4" maxlength="8" size="10" />
+        <label for="id4">5th string</label>
+    </div>
+    <div>
+        <input name="id5" id="id5" required type="text" minlength="4" maxlength="8" size="10" />
+        <label for="id5">6th string</label>
+    </div>
+    <div>
+        <input name="id6" id="id6" required type="text" minlength="4" maxlength="8" size="10" />
+        <label for="id6">7th string</label>
+    </div>
+    <div>
+        <input name="id7" id="id7" required type="text" minlength="4" maxlength="8" size="10" />
+        <label for="id7">8th string</label>
+    </div>
+    <div>
+        <input name="id8" id="id8" required type="text" minlength="4" maxlength="8" size="10" />
+        <label for="id8">9th string</label>
+    </div>
+    <div>
+        <input name="id9" id="id9" required type="text" minlength="4" maxlength="8" size="10" />
+        <label for="id9">10th string</label>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <button>Submit</button>
+
+    <br>
+    <br>
+    <br>
+    <p th:text = "'Sorting Method: ' + ${chosenSort}"></p>
+    <p th:text = "'Sorted List: ' + ${finalArray}"></p>
+    <p th:text = "'Sort Time: ' + ${time} + ' nanoseconds.'"></p>
+</form>
+</body>
+</html>

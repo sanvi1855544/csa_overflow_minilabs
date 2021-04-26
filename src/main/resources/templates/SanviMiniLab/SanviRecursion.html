@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome to Sanvi's Recursion Minilab</h1>
+<form id="SanviRecursion" action="/SanviRecursion" method="GET">
+
+    <p>Calculate Factorial Using Recursion:</p>
+    <p>Note: The default value is 0, so if no number is inputted, the code will return 1 (factorial of 0).</p>
+
+    <label for="num1">Enter a number between 0 and 12 to Calculate the Factorial Of:</label>
+    <input name="num1" id="num1" type="number" min="1" max="12" />
+    <button>Submit</button>
+
+    <p th:text="'Factorial of ' + ${num1} + ':' + ' ' + ${fact1} + '.'"></p>
+    <p th:text="'Time Analysis: ' + ${time} + ' nanoseconds.'"></p>
+
+
+
+</form>
+
+
+</body>
+</html>

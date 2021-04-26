@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="SanviInheritanceWithAbstract" action="/SanviInheritanceWithAbstract" method="GET">
+
+    <h1>Welcome to Sanvi's InheritanceWithAbstract Minilab</h1>
+
+    <br><br><br>
+
+    <label for="radius">Type cylinder radius here:</label>
+    <input name="radius" id="radius" type="number" step="any" min="0" max="100" />
+    <br><br>
+    <label for="length">Type cylinder length here:</label>
+    <input name="length" id="length" type="number" step="any" min="0" max="1000" />
+    <button>Submit</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p th:text="'Cylinder Radius:' + ${radius}"></p>
+    <p th:text="'Cylinder Length:' + ${length}"></p>
+    <p th:text="'Cylinder Volume:' + ${volume}"></p>
+</form>
+</body>
+</html>
