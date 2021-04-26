@@ -19,7 +19,10 @@ Jacob Rozenkrants | [@jar04](https://github.com/jar04) |
 Sanvi Tickets
 - [Inheritance With Abstract Class](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/InheritanceWithAbstract)
 - [Inheritance](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/Inheritance)
-- [Recursion]
+- [Recursion](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/Recursion)
+- [SortsInt](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/SortsInt)
+- [SortsPOJO](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/SortsPOJO)
+- [SortsString](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/SortsString)
 
 Gautam Tickets
 - [Recursion]
