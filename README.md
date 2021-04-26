@@ -17,8 +17,8 @@ Jacob Rozenkrants | [@jar04](https://github.com/jar04) |
 ## Tickets:
 
 Sanvi Tickets
-- [Inheritance With Abstract Class]
-- [Inheritance]
+- [Inheritance With Abstract Class](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/InheritanceWithAbstract)
+- [Inheritance](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/Inheritance)
 - [Recursion]
 
 Gautam Tickets
