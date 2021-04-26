@@ -25,19 +25,14 @@ Sanvi Tickets
 - [SortsString](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/SortsString)
 
 Gautam Tickets
-- [Recursion]
 
 Dhruv Tickets
-- [Recursion]
 
 Jacob Tickets
-- [Recursion]
-- [Inheritance]
-- [Self-Grade]
+
 
 Arnav Tickets
-- [Recursion and Inheritance minilabs]
-- 
+
 
 
     
