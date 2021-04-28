@@ -1,0 +1,8 @@
+package com.nighthawk.csa.Minilab.Jacob.SortsInt;
+
+abstract class Base {
+    Base() {
+    }
+
+    abstract int[] sortArr(int[] arr);
+}

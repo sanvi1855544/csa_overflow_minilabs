@@ -13,7 +13,7 @@ Gautam Gupta | [@batman084](https://github.com/batman084) |
 Sanvi Pal | [@sanvi1855544](https://github.com/sanvi1855544) |
 Dhruv Sengupta | [@DaHippoBear](https://github.com/DaHippoBear) |
 Jacob Rozenkrants | [@jar04](https://github.com/jar04) |
-
+Arnav Swami | [@arnavswami](https://github.com/arnavswami) |
 ## Tickets:
 
 Sanvi Tickets
