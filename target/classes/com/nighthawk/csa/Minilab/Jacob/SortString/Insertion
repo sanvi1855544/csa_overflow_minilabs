@@ -1,4 +1,4 @@
-package com.nighthawk.csa.Minilab.Jacob.SortsString;
+package com.nighthawk.csa.Minilab.Jacob.SortString;
 
 public class Insertion extends Base {
     public Insertion() {
