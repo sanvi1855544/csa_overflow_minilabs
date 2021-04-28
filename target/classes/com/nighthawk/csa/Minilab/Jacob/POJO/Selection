@@ -1,4 +1,3 @@
-
 package com.nighthawk.csa.Minilab.Jacib.SortPOJO;
 
 public class Selection extends Base {
@@ -25,3 +24,4 @@ public class Selection extends Base {
         return arr;
     }
 }
+
