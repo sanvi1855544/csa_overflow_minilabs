@@ -13,7 +13,7 @@ public class Cookie {
         return ("Used " + chocChipNum + " chocolate chips to make a cookie with a diameter of " + cookieDiameter);
     }
 
-    public class mnmCookie extends Cookie {
+    public static class mnmCookie extends Cookie {
         public int mnmCount;
 
         public mnmCookie(int chocChipNum, int cookieDiameter, int StartmnmCount) {
