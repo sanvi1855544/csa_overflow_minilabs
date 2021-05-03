@@ -26,7 +26,10 @@ Sanvi Tickets
 - [LinkedList and ArrayList](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/src/main/java/com/nighthawk/csa/Minilab/sanvi/List)
 
 Gautam Tickets
-
+- [Inheritance](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/src/main/java/com/nighthawk/csa/Minilab/gautam/Inheritance)
+- [Recursion](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/src/main/java/com/nighthawk/csa/Minilab/gautam/Recursion)
+- [Sorts](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/src/main/java/com/nighthawk/csa/Minilab/gautam)
+- [Linked Lists](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/src/main/java/com/nighthawk/csa/Minilab/List)
 Dhruv Tickets
 
 Jacob Tickets

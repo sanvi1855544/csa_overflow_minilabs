@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gautam's Linked Lists MiniLab</title>
+</head>
+<body>
+
+<form id="GautamLinkedList" th:action="@{GautamMiniLab/GautamLinkedList}" method="GET">
+    <h1>Input:</h1>
+    <label for="inputA">First Input:</label><br>
+    <input type="number" id="inputA" name="inputA"><br>
+    <label for="inputB">Second Input:</label><br>
+    <input type="number" id="inputB" name="inputB"><br>
+    <label for="inputC">Third Input:</label><br>
+    <input type="number" id="inputC" name="inputC"><br>
+    <label for="inputD">Fourth Input:</label><br>
+    <input type="number" id="inputD" name="inputD"><br>
+    <input type="submit" value="View Output">
+
+    <br>
+
+    <p th:text = "${listA}"></p>
+<!--    <p th:text = "'Item Deleted from List: ' + ${listB}"></p>
+    <p th:text = "'Item Inserted into List: ' + ${listC}"></p>-->
+</form>
+
+</body>
+</html>

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.io.IOException;
 import java.util.Arrays;
 
+@org.springframework.stereotype.Controller
 public class SSController {
     @GetMapping("/GautamStringSorts")
     public String sorter(
