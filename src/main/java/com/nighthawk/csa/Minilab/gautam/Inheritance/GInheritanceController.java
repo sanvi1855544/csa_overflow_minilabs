@@ -17,10 +17,17 @@ public class GInheritanceController {
         String roleA = role.toString();
         int deadlineA = deadline;
 
-        Editor editorA = new Editor(deadlineA, roleA, "Get into it!", true);
-
-        model.addAttribute("roleN", editorA.getRole());
-        model.addAttribute("deadlineN", editorA.deadlineStatus());
+        if (role.equals("Editor")) {
+            Editor editorA = new Editor(deadlineA, roleA, 90);
+            model.addAttribute("roleN", editorA.getRole());
+            model.addAttribute("deadlineN", editorA.deadlineStatus());
+            model.addAttribute("deadlineStatus", editorA.pagesToDo());
+        } else if (role.equals("Staffer")) {
+            Staffer stafferA = new Staffer("Staffer", deadline);
+            model.addAttribute("roleN", stafferA.getRole());
+            model.addAttribute("deadlineN", "100");
+            model.addAttribute("deadlineStatus", stafferA.todo());
+        }
 
         return "GautamMinilab/GautamInheritance";
     }
