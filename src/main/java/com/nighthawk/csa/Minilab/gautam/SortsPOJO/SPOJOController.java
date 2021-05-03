@@ -34,14 +34,17 @@ public class SPOJOController {
         long start = System.nanoTime();
 
         if(sortType.equals("Sort - Bubble")){
-           Bubble bubbleSorter = new Bubble();
-            model.addAttribute("final", Arrays.toString(bubbleSorter.sortArr(sortingArray)));
+            com.nighthawk.csa.Minilab.gautam.SortsPOJO.Bubble bubbleSorter = new Bubble();
+            model.addAttribute("finalArray", Arrays.toString(bubbleSorter.sortArr(sortingArray)));
         } else if (sortType.equals("Sort - Selection")){
-           Selection selSorter = new Selection();
-            model.addAttribute("final", Arrays.toString(selSorter.sortArr(sortingArray)));
+            com.nighthawk.csa.Minilab.gautam.SortsPOJO.Selection selSorter = new Selection();
+            model.addAttribute("finalArray", Arrays.toString(selSorter.sortArr(sortingArray)));
         } else if (sortType.equals("Sort - Insertion")){
-           Insertion inSorter = new Insertion();
-            model.addAttribute("final", Arrays.toString(inSorter.sortArr(sortingArray)));
+            com.nighthawk.csa.Minilab.gautam.SortsPOJO.Insertion inSorter = new Insertion();
+            model.addAttribute("finalArray", Arrays.toString(inSorter.sortArr(sortingArray)));
+        } else {
+            com.nighthawk.csa.Minilab.gautam.SortsPOJO.Bubble defaultSorter = new Bubble();
+            model.addAttribute("finalArray", Arrays.toString(defaultSorter.sortArr(sortingArray)));
         }
 
         long end = System.nanoTime();

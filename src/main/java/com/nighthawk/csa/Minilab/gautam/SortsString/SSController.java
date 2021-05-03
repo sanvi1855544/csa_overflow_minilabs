@@ -1,17 +1,13 @@
 package com.nighthawk.csa.Minilab.gautam.SortsString;
 
-import com.nighthawk.csa.Minilab.gautam.SortsString.Bubble;
-import com.nighthawk.csa.Minilab.gautam.SortsString.Insertion;
-import com.nighthawk.csa.Minilab.gautam.SortsString.Selection;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.io.IOException;
 import java.util.Arrays;
 
-@org.springframework.stereotype.Controller
+@Controller
 public class SSController {
     @GetMapping("/GautamStringSorts")
     public String sorter(
@@ -32,7 +28,7 @@ public class SSController {
 
         long start = System.nanoTime();
 
-        if(sortType.equals("Bubble Sort")){
+        if (sortType.equals("Bubble Sort")){
             com.nighthawk.csa.Minilab.gautam.SortsString.Bubble bubbleSorter = new Bubble();
             model.addAttribute("finalArray", Arrays.toString(bubbleSorter.sortArr(sortingArray)));
         } else if (sortType.equals("Selection Sort")){
@@ -41,6 +37,9 @@ public class SSController {
         } else if (sortType.equals("Insertion Sort")){
             com.nighthawk.csa.Minilab.gautam.SortsString.Insertion inSorter = new Insertion();
             model.addAttribute("finalArray", Arrays.toString(inSorter.sortArr(sortingArray)));
+        } else {
+            com.nighthawk.csa.Minilab.gautam.SortsString.Bubble defaultSorter = new Bubble();
+            model.addAttribute("finalArray", Arrays.toString(defaultSorter.sortArr(sortingArray)));
         }
 
         long end = System.nanoTime();

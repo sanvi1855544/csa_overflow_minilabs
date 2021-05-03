@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class GRecursionController {
     @GetMapping("/GautamRecursion")
-    public String gautamRecurse(@RequestParam(name = "sNum", required = false, defaultValue = "0") Integer sNum, Model model) {
-        model.addAttribute("sNum", sNum);
-        model.addAttribute("factA", GautamRecursion.gfactorial(sNum));
+    public String gautamRecurse(@RequestParam(name = "sNum", required = true, defaultValue = "2") Integer sNum,
+                                Model model
+    ){
+        model.addAttribute("num1", sNum);
+        model.addAttribute("fact1", GautamRecursion.gfactorial(sNum));
 
         return "GautamMiniLab/GautamRecursion";
     }
