@@ -23,6 +23,7 @@ Sanvi Tickets
 - [SortsInt](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/SortsInt)
 - [SortsPOJO](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/SortsPOJO)
 - [SortsString](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/target/classes/com/nighthawk/csa/Minilab/sanvi/SortsString)
+- [LinkedList and ArrayList](https://github.com/sanvi1855544/csa_overflow_minilabs/tree/main/src/main/java/com/nighthawk/csa/Minilab/sanvi/List)
 
 Gautam Tickets
 
