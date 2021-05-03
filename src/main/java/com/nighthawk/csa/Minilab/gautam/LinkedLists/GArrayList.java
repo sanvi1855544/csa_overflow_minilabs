@@ -2,13 +2,12 @@ package com.nighthawk.csa.Minilab.gautam.LinkedLists;
 
 import java.util.*;
 
-
-public class GLinkedList extends Base {
-    private LinkedList<String> csList;
-    private LinkedList<String> addList;
-    private LinkedList<String> removeList;
-    public GLinkedList(String[] arr) {
-        csList = new LinkedList<String>();
+public class GArrayList extends Base {
+    private ArrayList<String> csList;
+    private ArrayList<String> addList;
+    private ArrayList<String> removeList;
+    public GArrayList(String[] arr) {
+        csList = new ArrayList<String>();
         csList.addAll(Arrays.asList(arr));
     }
 

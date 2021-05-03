@@ -1,6 +1,6 @@
 package com.nighthawk.csa.Minilab.gautam.SortsString;
 
-public class Bubble {
+public class Bubble extends Base{
     public String[] sortArr(String[] arr){
         int n = arr.length;
         for (int i = 0; i < n-1; i++) {

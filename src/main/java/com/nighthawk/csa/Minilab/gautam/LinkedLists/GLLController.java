@@ -3,15 +3,10 @@ package com.nighthawk.csa.Minilab.gautam.LinkedLists;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import org.springframework.stereotype.Controller;
 import java.util.Arrays;
 
-@org.springframework.stereotype.Controller
+@Controller
 public class GLLController {
     @GetMapping("/GautamLinkedList")
     public String sort(
@@ -23,9 +18,46 @@ public class GLLController {
     ){
         String[] sortArray = {inputA, inputB, inputC, inputD};
 
+        //Linked list times
+        long start = System.nanoTime();
         GLinkedList list1 = new GLinkedList(sortArray);
-        model.addAttribute("listA", Arrays.toString(list1.add()));
+        model.addAttribute("listA", Arrays.toString(list1.sort()));
+        long end = System.nanoTime();
+        long timeRes = end - start;
 
+        long startB = System.nanoTime();
+        list1.add();
+        long endB = System.nanoTime();
+        long timeAdd = endB - startB;
+
+        long startC = System.nanoTime();
+        list1.remove();
+        long endC = System.nanoTime();
+        long timeRemove = endC - startC;
+
+        //array list times
+        long startA = System.nanoTime();
+        GArrayList array1 = new GArrayList(sortArray);
+        model.addAttribute("listA", Arrays.toString(array1.sort()));
+        long endA = System.nanoTime();
+        long timeResA = endA - startA;
+
+        long startE = System.nanoTime();
+        array1.add();
+        long endE = System.nanoTime();
+        long timeAddA = endE - startE;
+
+        long startD = System.nanoTime();
+        array1.remove();
+        long endD = System.nanoTime();
+        long timeRemoveA = endD - startD;
+
+        model.addAttribute("timeA", timeRes);
+        model.addAttribute("timeB", timeAdd);
+        model.addAttribute("timeC", timeRemove);
+        model.addAttribute("timeD", timeResA);
+        model.addAttribute("timeE", timeAddA);
+        model.addAttribute("timeF", timeRemoveA);
         return "GautamMiniLab/GautamLinkedList";
 
     }

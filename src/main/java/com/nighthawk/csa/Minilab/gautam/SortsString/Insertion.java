@@ -1,6 +1,6 @@
 package com.nighthawk.csa.Minilab.gautam.SortsString;
 
-public class Insertion {
+public class Insertion extends Base{
     public String[] sortArr(String[] arr) {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {

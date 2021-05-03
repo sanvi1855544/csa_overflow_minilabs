@@ -33,13 +33,13 @@ public class SSController {
         long start = System.nanoTime();
 
         if(sortType.equals("Bubble Sort")){
-            Bubble bubbleSorter = new Bubble();
+            com.nighthawk.csa.Minilab.gautam.SortsString.Bubble bubbleSorter = new Bubble();
             model.addAttribute("finalArray", Arrays.toString(bubbleSorter.sortArr(sortingArray)));
         } else if (sortType.equals("Selection Sort")){
-            Selection selSorter = new Selection();
+            com.nighthawk.csa.Minilab.gautam.SortsString.Selection selSorter = new Selection();
             model.addAttribute("finalArray", Arrays.toString(selSorter.sortArr(sortingArray)));
         } else if (sortType.equals("Insertion Sort")){
-            Insertion inSorter = new Insertion();
+            com.nighthawk.csa.Minilab.gautam.SortsString.Insertion inSorter = new Insertion();
             model.addAttribute("finalArray", Arrays.toString(inSorter.sortArr(sortingArray)));
         }
 
