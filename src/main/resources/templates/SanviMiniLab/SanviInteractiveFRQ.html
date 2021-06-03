@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+
+        div label {
+            display: block;
+        }
+    </style> <!--This is to maintain horizontal input fields-->
+</head>
+<body>
+
+<form id="SanviInteractiveFRQ" action="/SanviInteractiveFRQ" method="GET">
+
+    <h1>Welcome to Sanvi's Interactive FRQ</h1>
+
+    <p>Answer problem 1</p>
+
+    <embed src="https://secure-media.collegeboard.org/apc/ap18-frq-computer-science-a.pdf" width="800" height="600">
+
+    <br>
+
+    <p>Please enter your response</p>
+
+    <br>
+    <div>
+        <!---input name="id0" id="id0" required type="textarea"cols="110" rows="25"/--->
+        <textarea name="id0" id="id0" cols="110" rows="25"></textarea>
+    </div>
+
+    <br>
+
+    <button>Submit</button>
+
+</form>
+</body>
+</html>
