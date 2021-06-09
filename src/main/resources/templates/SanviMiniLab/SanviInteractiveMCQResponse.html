@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+
+        div label {
+            display: block;
+        }
+    </style> <!--This is to maintain horizontal input fields-->
+</head>
+<body>
+
+<form id="SanviInteractiveMCQResponse" action="/SanviInteractiveMCQ" method="GET">
+
+    <h1>Welcome to Sanvi's Interactive MCQ</h1>
+
+
+    <p>Your answers</p>
+
+    <p th:text = "'Question 1: ' + ${R1}"></p>
+    <p th:text = "'Question 2: ' + ${R2}"></p>
+    <p th:text = "'Question 3: ' + ${R3}"></p>
+    <p th:text = "'Question 4: ' + ${R4}"></p>
+    <p th:text = "'Question 5: ' + ${R5}"></p>
+    <p th:text = "'Question 6: ' + ${R6}"></p>
+    <p th:text = "'Question 7: ' + ${R7}"></p>
+    <p th:text = "'Question 8: ' + ${R8}"></p>
+    <p th:text = "'Question 9: ' + ${R9}"></p>
+    <p th:text = "'Question 10: ' + ${R10}"></p>
+    <p th:text = "'Question 11: ' + ${R11}"></p>
+    <p th:text = "'Question 12: ' + ${R12}"></p>
+    <p th:text = "'Question 13: ' + ${R13}"></p>
+    <p th:text = "'Question 14: ' + ${R14}"></p>
+    <p th:text = "'Question 15: ' + ${R15}"></p>
+    <p th:text = "'Question 16: ' + ${R16}"></p>
+    <p th:text = "'Question 17: ' + ${R17}"></p>
+    <p th:text = "'Question 18: ' + ${R18}"></p>
+    <p th:text = "'Question 19: ' + ${R19}"></p>
+    <p th:text = "'Question 20: ' + ${R20}"></p>
+
+    <br>
+
+    <p>Scoring Guide</p>
+
+    <embed src="https://docs.google.com/document/d/1c-catgtoRDKjtLRjRGcpIVWs8pV2Aea-X5Rsc6t8BMA/edit?usp=sharing" width="800" height="600">
+
+    <br>
+
+</form>
+</body>
+</html>
